@@ -45,26 +45,26 @@ Education CRM is designed to streamline the management of schools, colleges, and
 ### Installation
 
 1. **Clone the repository:**
-   ```bash
+   \`\`\`bash
    git clone <repo-url>
    cd edu-crm
-   ```
+   \`\`\`
 2. **Install dependencies:**
-   ```bash
+   \`\`\`bash
    pnpm install
    # or
    yarn install
    # or
    npm install
-   ```
+   \`\`\`
 3. **Run the development server:**
-   ```bash
+   \`\`\`bash
    pnpm dev
    # or
    yarn dev
    # or
    npm run dev
-   ```
+   \`\`\`
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Demo Accounts
@@ -81,7 +81,7 @@ Select the appropriate role on the login page.
 
 ## Project Structure
 
-```
+\`\`\`
 app/
   admin/         # Admin dashboard, teachers, students, payments, salaries, shop
   teacher/       # Teacher dashboard, groups, lessons, attendance, points
@@ -99,7 +99,7 @@ providers/       # Context and theme providers
 public/          # Static assets (logo, images)
 stores/          # Zustand stores for state management
 types/           # TypeScript types and interfaces
-```
+\`\`\`
 
 ## License
 
@@ -111,26 +111,26 @@ MIT
 This repository has been adjusted to use **Prisma (PostgreSQL)** and **NextAuth.js**.
 
 1. Create a PostgreSQL database and set `DATABASE_URL` in your environment:
-```
+\`\`\`
 DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE"
-```
+\`\`\`
 
 2. Set NextAuth secret:
-```
+\`\`\`
 NEXTAUTH_SECRET="a-long-random-string"
-```
+\`\`\`
 
 3. Install dependencies and Prisma:
-```
+\`\`\`
 pnpm install
 npx prisma generate
 npx prisma migrate dev --name init
-```
+\`\`\`
 
 4. Run the app:
-```
+\`\`\`
 pnpm dev
-```
+\`\`\`
 
 Notes:
 - Admin routes for creating teachers/students are under `/api/admin/teachers` and `/api/admin/students`.
